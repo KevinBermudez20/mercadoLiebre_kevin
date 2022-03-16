@@ -17,6 +17,9 @@ app.get('/creaTuCuenta', (req,res)=>{
     res.sendFile(path.join(__dirname,'views','crea-tu-cuenta.html'))
     
 })
+app.post('/', (req,res)=>{
+    res.sendFile(path.join(__dirname,'views','home.html'))
+})
 
 
 
