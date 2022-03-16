@@ -1,12 +1,12 @@
 const express=require('express');
 const app=express();
 const path=require('path');
-const puerto= process.env.puerto || 3014;
+const PORT= process.env.PORT || 3014;
 
 app.use(express.static(path.join(__dirname,'public')));
 
-app.listen(puerto, () => {
-    console.log(`El servidor funciona con exito en el puerto ${puerto}`)
+app.listen(PORT, () => {
+    console.log(`El servidor funciona con exito en el puerto ${PORT}`)
 });
 
 app.get('/', (req,res)=>{
