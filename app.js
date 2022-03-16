@@ -1,7 +1,7 @@
 const express=require('express');
 const app=express();
 const path=require('path');
-const puerto=3014;
+const puerto= process.env.puerto || 3014;
 
 app.use(express.static(path.join(__dirname,'public')));
 
